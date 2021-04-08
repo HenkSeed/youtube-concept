@@ -11,6 +11,10 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="css/normalize.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+		/>
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
@@ -214,7 +218,772 @@
 					</li>
 				</ul>
 			</aside>
+
+			<main class="content">
+				<div class="channel">
+					<!-- Заголовок слайдера -->
+					<a href="#" class="channel-title">
+						<img
+							src="img/belle_briggs.png"
+							alt="Belle Briggs"
+							class="channel-avatar"
+						/>
+						<span class="channel-text">Belle Briggs</span>
+					</a>
+					<!-- /.channel-title -->
+
+					<div class="slider-buttons">
+						<!-- Navigation buttons. Кнопки перенесены сюда из стандартного swiper-размещения -->
+						<!-- У них изменен класс swiper-... на channel-... -->
+						<!-- и в них размещены svg-иконки -->
+						<div class="channel-button-prev channel-button">
+							<svg class="icon icon-left" width="28" height="28">
+								<use xlink:href="img/icons.svg#left"></use>
+							</svg>
+						</div>
+						<div class="channel-button-next channel-button">
+							<svg class="icon icon-right" width="28" height="28">
+								<use xlink:href="img/icons.svg#right"></use>
+							</svg>
+						</div>
+					</div>
+					<!-- /.slider-buttons -->
+
+					<!-- Slider main container -->
+					<div class="swiper-container channel-slider">
+						<!-- Additional required wrapper -->
+						<div class="swiper-wrapper">
+							<!-- Slides -->
+
+							<!-- 01 -->
+							<div class="swiper-slide">
+								<div class="video-card">
+									<div class="video-thumb">
+										<img
+											src="img/cover-video-01.png"
+											alt=""
+											class="thumbnail"
+										/>
+										<span class="video-duration">4:15</span>
+									</div>
+									<!-- /.video-thumb -->
+									<h3 class="video-title">A Brief History Of Creation</h3>
+									<div class="video-info">
+										<span class="video-counter">
+											<span class="video-views">80k views</span>
+											<span class="video-date">3 days ago</span>
+										</span>
+										<span class="video-channel">Belle Briggs</span>
+									</div>
+								</div>
+								<!-- /.video-card -->
+							</div>
+							<!-- /.swiper-slide -->
+
+							<!-- 02 -->
+							<div class="swiper-slide">
+								<div class="video-card">
+									<div class="video-thumb">
+										<img
+											src="img/cover-video-02.png"
+											alt=""
+											class="thumbnail"
+										/>
+										<span class="video-duration">8:00</span>
+									</div>
+									<!-- /.video-thumb -->
+									<h3 class="video-title">Selecting The Right Hotel</h3>
+									<div class="video-info">
+										<span class="video-counter">
+											<span class="video-views">123k views</span>
+											<span class="video-date">1 months ago</span>
+										</span>
+										<span class="video-channel">Belle Briggs</span>
+									</div>
+								</div>
+								<!-- /.video-card -->
+							</div>
+							<!-- /.swiper-slide -->
+
+							<!-- 03 -->
+							<div class="swiper-slide">
+								<div class="video-card">
+									<div class="video-thumb">
+										<img
+											src="img/cover-video-03.png"
+											alt=""
+											class="thumbnail"
+										/>
+										<span class="video-duration">5:32</span>
+									</div>
+									<!-- /.video-thumb -->
+									<h3 class="video-title">Asteroids</h3>
+									<div class="video-info">
+										<span class="video-counter">
+											<span class="video-views">43k views</span>
+											<span class="video-date">12 days ago</span>
+										</span>
+										<span class="video-channel">Belle Briggs</span>
+									</div>
+								</div>
+								<!-- /.video-card -->
+							</div>
+							<!-- /.swiper-slide -->
+
+							<!-- 04 -->
+							<div class="swiper-slide">
+								<div class="video-card">
+									<div class="video-thumb">
+										<img
+											src="img/cover-video-04.png"
+											alt=""
+											class="thumbnail"
+										/>
+										<span class="video-duration">6:40</span>
+									</div>
+									<!-- /.video-thumb -->
+									<h3 class="video-title">Telescopes 101</h3>
+									<div class="video-info">
+										<span class="video-counter">
+											<span class="video-views">11k views</span>
+											<span class="video-date">6 months ago</span>
+										</span>
+										<span class="video-channel">Belle Briggs</span>
+									</div>
+								</div>
+								<!-- /.video-card -->
+							</div>
+							<!-- /.swiper-slide -->
+
+							<!-- 05 -->
+							<div class="swiper-slide">
+								<div class="video-card">
+									<div class="video-thumb">
+										<img
+											src="img/cover-video-05.png"
+											alt=""
+											class="thumbnail"
+										/>
+										<span class="video-duration">1:45</span>
+									</div>
+									<!-- /.video-thumb -->
+									<h3 class="video-title">Medical Care Is Just</h3>
+									<div class="video-info">
+										<span class="video-counter">
+											<span class="video-views">18k views</span>
+											<span class="video-date">2 days ago</span>
+										</span>
+										<span class="video-channel">Belle Briggs</span>
+									</div>
+								</div>
+								<!-- /.video-card -->
+							</div>
+							<!-- /.swiper-slide -->
+
+							<!-- 06 -->
+							<div class="swiper-slide">
+								<div class="video-card">
+									<div class="video-thumb">
+										<img
+											src="img/cover-video-06.png"
+											alt=""
+											class="thumbnail"
+										/>
+										<span class="video-duration">2:12</span>
+									</div>
+									<!-- /.video-thumb -->
+									<h3 class="video-title">Moon Gazing</h3>
+									<div class="video-info">
+										<span class="video-counter">
+											<span class="video-views">67k views</span>
+											<span class="video-date">4 months ago</span>
+										</span>
+										<span class="video-channel">Belle Briggs</span>
+									</div>
+								</div>
+								<!-- /.video-card -->
+							</div>
+							<!-- /.swiper-slide -->
+						</div>
+					</div>
+					<!-- .swiper-container -->
+				</div>
+				<!-- .channel -->
+
+				<div class="channel">
+					<!-- Заголовок слайдера -->
+					<a href="#" class="channel-title">
+						<img
+							src="img/belle_briggs.png"
+							alt="Belle Briggs"
+							class="channel-avatar"
+						/>
+						<span class="channel-text">Belle Briggs</span>
+					</a>
+					<!-- /.channel-title -->
+
+					<div class="slider-buttons">
+						<!-- Navigation buttons. Кнопки перенесены сюда из стандартного swiper-размещения -->
+						<!-- У них изменен класс swiper-... на channel-... -->
+						<!-- и в них размещены svg-иконки -->
+						<div class="channel-button-prev channel-button">
+							<svg class="icon icon-left" width="28" height="28">
+								<use xlink:href="img/icons.svg#left"></use>
+							</svg>
+						</div>
+						<div class="channel-button-next channel-button">
+							<svg class="icon icon-right" width="28" height="28">
+								<use xlink:href="img/icons.svg#right"></use>
+							</svg>
+						</div>
+					</div>
+					<!-- /.slider-buttons -->
+
+					<!-- Slider main container -->
+					<div class="swiper-container channel-slider">
+						<!-- Additional required wrapper -->
+						<div class="swiper-wrapper">
+							<!-- Slides -->
+
+							<!-- 01 -->
+							<div class="swiper-slide">
+								<div class="video-card">
+									<div class="video-thumb">
+										<img
+											src="img/cover-video-01.png"
+											alt=""
+											class="thumbnail"
+										/>
+										<span class="video-duration">4:15</span>
+									</div>
+									<!-- /.video-thumb -->
+									<h3 class="video-title">A Brief History Of Creation</h3>
+									<div class="video-info">
+										<span class="video-counter">
+											<span class="video-views">80k views</span>
+											<span class="video-date">3 days ago</span>
+										</span>
+										<span class="video-channel">Belle Briggs</span>
+									</div>
+								</div>
+								<!-- /.video-card -->
+							</div>
+							<!-- /.swiper-slide -->
+
+							<!-- 02 -->
+							<div class="swiper-slide">
+								<div class="video-card">
+									<div class="video-thumb">
+										<img
+											src="img/cover-video-02.png"
+											alt=""
+											class="thumbnail"
+										/>
+										<span class="video-duration">8:00</span>
+									</div>
+									<!-- /.video-thumb -->
+									<h3 class="video-title">Selecting The Right Hotel</h3>
+									<div class="video-info">
+										<span class="video-counter">
+											<span class="video-views">123k views</span>
+											<span class="video-date">1 months ago</span>
+										</span>
+										<span class="video-channel">Belle Briggs</span>
+									</div>
+								</div>
+								<!-- /.video-card -->
+							</div>
+							<!-- /.swiper-slide -->
+
+							<!-- 03 -->
+							<div class="swiper-slide">
+								<div class="video-card">
+									<div class="video-thumb">
+										<img
+											src="img/cover-video-03.png"
+											alt=""
+											class="thumbnail"
+										/>
+										<span class="video-duration">5:32</span>
+									</div>
+									<!-- /.video-thumb -->
+									<h3 class="video-title">Asteroids</h3>
+									<div class="video-info">
+										<span class="video-counter">
+											<span class="video-views">43k views</span>
+											<span class="video-date">12 days ago</span>
+										</span>
+										<span class="video-channel">Belle Briggs</span>
+									</div>
+								</div>
+								<!-- /.video-card -->
+							</div>
+							<!-- /.swiper-slide -->
+
+							<!-- 04 -->
+							<div class="swiper-slide">
+								<div class="video-card">
+									<div class="video-thumb">
+										<img
+											src="img/cover-video-04.png"
+											alt=""
+											class="thumbnail"
+										/>
+										<span class="video-duration">6:40</span>
+									</div>
+									<!-- /.video-thumb -->
+									<h3 class="video-title">Telescopes 101</h3>
+									<div class="video-info">
+										<span class="video-counter">
+											<span class="video-views">11k views</span>
+											<span class="video-date">6 months ago</span>
+										</span>
+										<span class="video-channel">Belle Briggs</span>
+									</div>
+								</div>
+								<!-- /.video-card -->
+							</div>
+							<!-- /.swiper-slide -->
+
+							<!-- 05 -->
+							<div class="swiper-slide">
+								<div class="video-card">
+									<div class="video-thumb">
+										<img
+											src="img/cover-video-05.png"
+											alt=""
+											class="thumbnail"
+										/>
+										<span class="video-duration">1:45</span>
+									</div>
+									<!-- /.video-thumb -->
+									<h3 class="video-title">Medical Care Is Just</h3>
+									<div class="video-info">
+										<span class="video-counter">
+											<span class="video-views">18k views</span>
+											<span class="video-date">2 days ago</span>
+										</span>
+										<span class="video-channel">Belle Briggs</span>
+									</div>
+								</div>
+								<!-- /.video-card -->
+							</div>
+							<!-- /.swiper-slide -->
+
+							<!-- 06 -->
+							<div class="swiper-slide">
+								<div class="video-card">
+									<div class="video-thumb">
+										<img
+											src="img/cover-video-06.png"
+											alt=""
+											class="thumbnail"
+										/>
+										<span class="video-duration">2:12</span>
+									</div>
+									<!-- /.video-thumb -->
+									<h3 class="video-title">Moon Gazing</h3>
+									<div class="video-info">
+										<span class="video-counter">
+											<span class="video-views">67k views</span>
+											<span class="video-date">4 months ago</span>
+										</span>
+										<span class="video-channel">Belle Briggs</span>
+									</div>
+								</div>
+								<!-- /.video-card -->
+							</div>
+							<!-- /.swiper-slide -->
+						</div>
+					</div>
+					<!-- .swiper-container -->
+				</div>
+				<!-- .channel -->
+
+				<div class="channel">
+					<!-- Заголовок слайдера -->
+					<a href="#" class="channel-title">
+						<img
+							src="img/belle_briggs.png"
+							alt="Belle Briggs"
+							class="channel-avatar"
+						/>
+						<span class="channel-text">Belle Briggs</span>
+					</a>
+					<!-- /.channel-title -->
+
+					<div class="slider-buttons">
+						<!-- Navigation buttons. Кнопки перенесены сюда из стандартного swiper-размещения -->
+						<!-- У них изменен класс swiper-... на channel-... -->
+						<!-- и в них размещены svg-иконки -->
+						<div class="channel-button-prev channel-button">
+							<svg class="icon icon-left" width="28" height="28">
+								<use xlink:href="img/icons.svg#left"></use>
+							</svg>
+						</div>
+						<div class="channel-button-next channel-button">
+							<svg class="icon icon-right" width="28" height="28">
+								<use xlink:href="img/icons.svg#right"></use>
+							</svg>
+						</div>
+					</div>
+					<!-- /.slider-buttons -->
+
+					<!-- Slider main container -->
+					<div class="swiper-container channel-slider">
+						<!-- Additional required wrapper -->
+						<div class="swiper-wrapper">
+							<!-- Slides -->
+
+							<!-- 01 -->
+							<div class="swiper-slide">
+								<div class="video-card">
+									<div class="video-thumb">
+										<img
+											src="img/cover-video-01.png"
+											alt=""
+											class="thumbnail"
+										/>
+										<span class="video-duration">4:15</span>
+									</div>
+									<!-- /.video-thumb -->
+									<h3 class="video-title">A Brief History Of Creation</h3>
+									<div class="video-info">
+										<span class="video-counter">
+											<span class="video-views">80k views</span>
+											<span class="video-date">3 days ago</span>
+										</span>
+										<span class="video-channel">Belle Briggs</span>
+									</div>
+								</div>
+								<!-- /.video-card -->
+							</div>
+							<!-- /.swiper-slide -->
+
+							<!-- 02 -->
+							<div class="swiper-slide">
+								<div class="video-card">
+									<div class="video-thumb">
+										<img
+											src="img/cover-video-02.png"
+											alt=""
+											class="thumbnail"
+										/>
+										<span class="video-duration">8:00</span>
+									</div>
+									<!-- /.video-thumb -->
+									<h3 class="video-title">Selecting The Right Hotel</h3>
+									<div class="video-info">
+										<span class="video-counter">
+											<span class="video-views">123k views</span>
+											<span class="video-date">1 months ago</span>
+										</span>
+										<span class="video-channel">Belle Briggs</span>
+									</div>
+								</div>
+								<!-- /.video-card -->
+							</div>
+							<!-- /.swiper-slide -->
+
+							<!-- 03 -->
+							<div class="swiper-slide">
+								<div class="video-card">
+									<div class="video-thumb">
+										<img
+											src="img/cover-video-03.png"
+											alt=""
+											class="thumbnail"
+										/>
+										<span class="video-duration">5:32</span>
+									</div>
+									<!-- /.video-thumb -->
+									<h3 class="video-title">Asteroids</h3>
+									<div class="video-info">
+										<span class="video-counter">
+											<span class="video-views">43k views</span>
+											<span class="video-date">12 days ago</span>
+										</span>
+										<span class="video-channel">Belle Briggs</span>
+									</div>
+								</div>
+								<!-- /.video-card -->
+							</div>
+							<!-- /.swiper-slide -->
+
+							<!-- 04 -->
+							<div class="swiper-slide">
+								<div class="video-card">
+									<div class="video-thumb">
+										<img
+											src="img/cover-video-04.png"
+											alt=""
+											class="thumbnail"
+										/>
+										<span class="video-duration">6:40</span>
+									</div>
+									<!-- /.video-thumb -->
+									<h3 class="video-title">Telescopes 101</h3>
+									<div class="video-info">
+										<span class="video-counter">
+											<span class="video-views">11k views</span>
+											<span class="video-date">6 months ago</span>
+										</span>
+										<span class="video-channel">Belle Briggs</span>
+									</div>
+								</div>
+								<!-- /.video-card -->
+							</div>
+							<!-- /.swiper-slide -->
+
+							<!-- 05 -->
+							<div class="swiper-slide">
+								<div class="video-card">
+									<div class="video-thumb">
+										<img
+											src="img/cover-video-05.png"
+											alt=""
+											class="thumbnail"
+										/>
+										<span class="video-duration">1:45</span>
+									</div>
+									<!-- /.video-thumb -->
+									<h3 class="video-title">Medical Care Is Just</h3>
+									<div class="video-info">
+										<span class="video-counter">
+											<span class="video-views">18k views</span>
+											<span class="video-date">2 days ago</span>
+										</span>
+										<span class="video-channel">Belle Briggs</span>
+									</div>
+								</div>
+								<!-- /.video-card -->
+							</div>
+							<!-- /.swiper-slide -->
+
+							<!-- 06 -->
+							<div class="swiper-slide">
+								<div class="video-card">
+									<div class="video-thumb">
+										<img
+											src="img/cover-video-06.png"
+											alt=""
+											class="thumbnail"
+										/>
+										<span class="video-duration">2:12</span>
+									</div>
+									<!-- /.video-thumb -->
+									<h3 class="video-title">Moon Gazing</h3>
+									<div class="video-info">
+										<span class="video-counter">
+											<span class="video-views">67k views</span>
+											<span class="video-date">4 months ago</span>
+										</span>
+										<span class="video-channel">Belle Briggs</span>
+									</div>
+								</div>
+								<!-- /.video-card -->
+							</div>
+							<!-- /.swiper-slide -->
+						</div>
+					</div>
+					<!-- .swiper-container -->
+				</div>
+				<!-- .channel -->
+
+				<div class="channel">
+					<!-- Заголовок слайдера -->
+					<a href="#" class="channel-title">
+						<img
+							src="img/belle_briggs.png"
+							alt="Belle Briggs"
+							class="channel-avatar"
+						/>
+						<span class="channel-text">Belle Briggs</span>
+					</a>
+					<!-- /.channel-title -->
+
+					<div class="slider-buttons">
+						<!-- Navigation buttons. Кнопки перенесены сюда из стандартного swiper-размещения -->
+						<!-- У них изменен класс swiper-... на channel-... -->
+						<!-- и в них размещены svg-иконки -->
+						<div class="channel-button-prev channel-button">
+							<svg class="icon icon-left" width="28" height="28">
+								<use xlink:href="img/icons.svg#left"></use>
+							</svg>
+						</div>
+						<div class="channel-button-next channel-button">
+							<svg class="icon icon-right" width="28" height="28">
+								<use xlink:href="img/icons.svg#right"></use>
+							</svg>
+						</div>
+					</div>
+					<!-- /.slider-buttons -->
+
+					<!-- Slider main container -->
+					<div class="swiper-container channel-slider">
+						<!-- Additional required wrapper -->
+						<div class="swiper-wrapper">
+							<!-- Slides -->
+
+							<!-- 01 -->
+							<div class="swiper-slide">
+								<div class="video-card">
+									<div class="video-thumb">
+										<img
+											src="img/cover-video-01.png"
+											alt=""
+											class="thumbnail"
+										/>
+										<span class="video-duration">4:15</span>
+									</div>
+									<!-- /.video-thumb -->
+									<h3 class="video-title">A Brief History Of Creation</h3>
+									<div class="video-info">
+										<span class="video-counter">
+											<span class="video-views">80k views</span>
+											<span class="video-date">3 days ago</span>
+										</span>
+										<span class="video-channel">Belle Briggs</span>
+									</div>
+								</div>
+								<!-- /.video-card -->
+							</div>
+							<!-- /.swiper-slide -->
+
+							<!-- 02 -->
+							<div class="swiper-slide">
+								<div class="video-card">
+									<div class="video-thumb">
+										<img
+											src="img/cover-video-02.png"
+											alt=""
+											class="thumbnail"
+										/>
+										<span class="video-duration">8:00</span>
+									</div>
+									<!-- /.video-thumb -->
+									<h3 class="video-title">Selecting The Right Hotel</h3>
+									<div class="video-info">
+										<span class="video-counter">
+											<span class="video-views">123k views</span>
+											<span class="video-date">1 months ago</span>
+										</span>
+										<span class="video-channel">Belle Briggs</span>
+									</div>
+								</div>
+								<!-- /.video-card -->
+							</div>
+							<!-- /.swiper-slide -->
+
+							<!-- 03 -->
+							<div class="swiper-slide">
+								<div class="video-card">
+									<div class="video-thumb">
+										<img
+											src="img/cover-video-03.png"
+											alt=""
+											class="thumbnail"
+										/>
+										<span class="video-duration">5:32</span>
+									</div>
+									<!-- /.video-thumb -->
+									<h3 class="video-title">Asteroids</h3>
+									<div class="video-info">
+										<span class="video-counter">
+											<span class="video-views">43k views</span>
+											<span class="video-date">12 days ago</span>
+										</span>
+										<span class="video-channel">Belle Briggs</span>
+									</div>
+								</div>
+								<!-- /.video-card -->
+							</div>
+							<!-- /.swiper-slide -->
+
+							<!-- 04 -->
+							<div class="swiper-slide">
+								<div class="video-card">
+									<div class="video-thumb">
+										<img
+											src="img/cover-video-04.png"
+											alt=""
+											class="thumbnail"
+										/>
+										<span class="video-duration">6:40</span>
+									</div>
+									<!-- /.video-thumb -->
+									<h3 class="video-title">Telescopes 101</h3>
+									<div class="video-info">
+										<span class="video-counter">
+											<span class="video-views">11k views</span>
+											<span class="video-date">6 months ago</span>
+										</span>
+										<span class="video-channel">Belle Briggs</span>
+									</div>
+								</div>
+								<!-- /.video-card -->
+							</div>
+							<!-- /.swiper-slide -->
+
+							<!-- 05 -->
+							<div class="swiper-slide">
+								<div class="video-card">
+									<div class="video-thumb">
+										<img
+											src="img/cover-video-05.png"
+											alt=""
+											class="thumbnail"
+										/>
+										<span class="video-duration">1:45</span>
+									</div>
+									<!-- /.video-thumb -->
+									<h3 class="video-title">Medical Care Is Just</h3>
+									<div class="video-info">
+										<span class="video-counter">
+											<span class="video-views">18k views</span>
+											<span class="video-date">2 days ago</span>
+										</span>
+										<span class="video-channel">Belle Briggs</span>
+									</div>
+								</div>
+								<!-- /.video-card -->
+							</div>
+							<!-- /.swiper-slide -->
+
+							<!-- 06 -->
+							<div class="swiper-slide">
+								<div class="video-card">
+									<div class="video-thumb">
+										<img
+											src="img/cover-video-06.png"
+											alt=""
+											class="thumbnail"
+										/>
+										<span class="video-duration">2:12</span>
+									</div>
+									<!-- /.video-thumb -->
+									<h3 class="video-title">Moon Gazing</h3>
+									<div class="video-info">
+										<span class="video-counter">
+											<span class="video-views">67k views</span>
+											<span class="video-date">4 months ago</span>
+										</span>
+										<span class="video-channel">Belle Briggs</span>
+									</div>
+								</div>
+								<!-- /.video-card -->
+							</div>
+							<!-- /.swiper-slide -->
+						</div>
+					</div>
+					<!-- .swiper-container -->
+				</div>
+				<!-- .channel -->
+			</main>
+			<!-- /.content -->
 		</div>
 		<!-- /.container -->
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="js/main.js"></script>
 	</body>
 </html>
