@@ -58,8 +58,9 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	padding-right: 17px;
-	min-width: 830px;
+	min-width: auto;
 	width: 50%;
+	margin-right: 40px;
 }
 
 .input-search {
@@ -73,8 +74,16 @@ body {
 	width: 19px;
 	height: 19px;
 	border: none;
+	padding: 0;
 	background-color: transparent;
 	cursor: pointer;
+}
+
+.icons {
+	display: flex;
+	align-items: center;
+	/* Блок icons отталкивается слева на максимально-возможное расстояние */
+	margin-left: auto;
 }
 
 .icon-search {
@@ -97,12 +106,6 @@ body {
 	margin-right: 50px;
 }
 
-.icons {
-	align-items: center;
-	/* Блок icons отталкивается слева на максимально-возможное расстояние */
-	margin-left: auto;
-}
-
 .user {
 	margin-left: 45px;
 }
@@ -117,7 +120,8 @@ body {
 .sidebar {
 	position: fixed;
 	/* Увеличиваем ширину сайдбара, отодвигая прокрутку от его содержимого */
-	width: 12%;
+	/* width: 12%; Заменяем следующей строкой для адаптивности сайдбара */
+	width: 200px;
 	left: 0;
 	top: 114px;
 	/* Высота боковой панели высчитывается от видимой части экрана за минусом хедера */
@@ -133,9 +137,10 @@ body {
 	width: 100%;
 	height: 400px;
 	margin-top: 85px;
-	/* background-color: #ff0000; */
-	padding-left: 13%;
+	/* padding-left: 13%; Заменяем следующей строкой для адаптивности сайдбара */
+	padding-left: 250px;
 	padding-top: 30px;
+	padding-right: 70px;
 }
 
 .nav-menu {
@@ -185,7 +190,8 @@ body {
 	margin-bottom: 30px;
 }
 
-.channel {
+.channel,
+.recommended {
 	/* Если этого не сделать, то у кнопок не сработает position: absolut; и кнопки */
 	/* будут позиционироваться относительно body, а не относительно channel, и переместятся */
 	/* в правый верхний угол страницы */
@@ -193,7 +199,8 @@ body {
 	margin-bottom: 49px;
 }
 
-.channel-title {
+.channel-title,
+.recommended-title {
 	display: flex;
 	align-items: center;
 	text-decoration: none;
@@ -214,12 +221,14 @@ body {
 	margin-left: 20px;
 }
 
-.video-card {
+/* .video-card {
 	width: 250px;
-}
+} Убираем фиксированную ширину для адаптивности карточек слайдера */
 
 .video-thumb {
-	width: 250px;
+	/* width: 250px; Убираем фиксированную ширину для адаптивности карточек слайдера */
+	/* Следующей строкой делаем резиновую ширину. Карточки перестают наползать друг на друга */
+	width: 100%;
 	height: 150px;
 	/* Скрывает части фотографии, который выходят за пределы карточки */
 	overflow: hidden;
@@ -229,10 +238,34 @@ body {
 	position: relative;
 }
 
+.video-thumb-recommended {
+	/* width: 250px; Убираем фиксированную ширину для адаптивности карточек слайдера */
+	/* Следующей строкой делаем резиновую ширину. Карточки перестают наползать друг на друга */
+	width: 100%;
+	height: 250px;
+	/* Скрывает части фотографии, который выходят за пределы карточки */
+	overflow: hidden;
+	/* Скругление углов карточки */
+	border-radius: 14px;
+	/* Для отображения длительности видео */
+	position: relative;
+}
+
 .thumbnail {
-	width: 250px;
+	/* width: 250px; Убираем фиксированную ширину для адаптивности карточек слайдера */
+	/* Следующей строкой делаем резиновую ширину. Карточки перестают наползать друг на друга */
+	width: 100%;
 	height: 150px;
-	/* Добавлено, чтобы сжатую в рамки 250х150 картинку "не плющило" */
+	/* Добавлено, чтобы сжатую в рамки 250х150 картинку "не плющило" - восстанавливаем пропорцию */
+	object-fit: cover;
+}
+
+.thumbnail-recommended {
+	/* width: 250px; Убираем фиксированную ширину для адаптивности карточек слайдера */
+	/* Следующей строкой делаем резиновую ширину. Карточки перестают наползать друг на друга */
+	width: 100%;
+	height: 250px;
+	/* Добавлено, чтобы сжатую в рамки 250х150 картинку "не плющило" - восстанавливаем пропорцию */
 	object-fit: cover;
 }
 
@@ -277,6 +310,7 @@ body {
 }
 
 /* Создаём пустой псевдо-элемент. Между двоеточием и after не должно быть пробелов! */
+/* Это мы формируем "точку" между video-views и video-date  */
 .video-views:after {
 	content: '';
 	width: 2px;
@@ -301,4 +335,110 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	width: 66px;
+}
+
+.food_drink {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 20px;
+	color: #c2c2c2;
+	margin-left: 19px;
+}
+
+.button-subscribe {
+	background-color: #ff0000;
+	border-radius: 20px;
+	border: none;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
+	color: #ffffff;
+	padding: 10px 20px;
+	position: absolute;
+	top: 10px;
+	right: 200px;
+	cursor: pointer;
+}
+
+/* Сайдбар для маленьких экранов, скрыт для нормальных экранов */
+.mobile-sidebar {
+	display: none;
+}
+
+@media (max-width: 860px) {
+	.icons {
+		display: none;
+	}
+	.user {
+		margin-left: auto;
+	}
+}
+
+@media (max-width: 640px) {
+	.menu-button {
+		display: none;
+	}
+	.sidebar {
+		display: none;
+	}
+	.content {
+		padding-left: 32px;
+	}
+
+	/* Сайдбар для маленьких экранов, скрыт для нормальных экранов */
+	.mobile-sidebar {
+		/* Должен быть в самом конце страницы */
+		position: fixed;
+		z-index: 99;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		background-color: #fff;
+		display: block; /* Отключаем display: none */
+	}
+	.mobile-sidebar .nav-link {
+		display: flex;
+		flex-direction: column;
+	}
+	.mobile-sidebar .nav-menu {
+		margin-bottom: 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		padding-top: 13px;
+		padding-bottom: 11px;
+		border-top: 1px solid #f1f1f1;
+	}
+	.nav-text {
+		margin-left: 0;
+		font-size: 10px;
+		line-height: 13px;
+	}
+	.nav-item {
+		margin-bottom: 0;
+	}
+}
+/* На малых экранах прячем строку поиска, оставляем только иконку поиска */
+@media (max-width: 496px) {
+	.input-search {
+		display: none;
+	}
+	.input-search.is-open {
+		/* display: block; */
+		/* background: #ebebeb; */
+	}
+	/*
+	.input-group {
+		position: fixed;
+		top: -100px;
+		left: 0;
+		width: 100%;
+		opacity: 0;
+		display: flex;
+		background: #fff;
+		margin-right: 0;
+		justify-content: right;
+		padding-right: 20px;
+		min-width: 30%;
+	}*/
 }
